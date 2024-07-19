@@ -6,6 +6,8 @@ import { dirname } from "path";
 const currentFilePath = import.meta.url;
 const currentDirectory = dirname(fileURLToPath(currentFilePath));
 
+console.log(currentDirectory);
+
 const mail = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
